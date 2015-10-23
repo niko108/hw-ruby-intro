@@ -3,8 +3,15 @@
 # Part 1
 
 def sum arr
-  # YOUR CODE HERE
+  return 0 if arr.empty?
+  total = 0
+  arr.each { |num| total += num }
+  return total
 end
+
+raise 'sum([]) != 0' unless sum([]) == 0
+raise 'sum([1,2,3]) != 6' unless sum([1,2,3]) == 6
+raise 'sum([3,-3,4,5,1]) != 10' unless sum([3,-3,4,5,1]) == 10
 
 def max_2_sum arr
   # YOUR CODE HERE
